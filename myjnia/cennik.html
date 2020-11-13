@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Bartek Papis">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Cennik</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Myjnia ręczna <span>Błysk</span></h1>
+            <nav>
+                <ul>
+                    <a href="#"><li>Home</li></a>
+                    <a href="#" class="active"><li>Cennik</li></a>
+                </ul>
+            </nav>
+        </header>
+        <div class="mainpage">
+        <main>
+            <h2>Oblicz koszt usługi</h2>
+            <div class="mainflex">
+            <form action="#">
+                <label for="name">Podaj imię: <input type="text" required placeholder="Wpisz swoje imię"></label>
+                <fieldset>
+                    <legend>Usługa</legend>
+                    <label for="mycie">Mycie zewnętrzne 30zł <input type="checkbox" value="30" checked disabled></label><br>
+                    <label for="mycie">Suszenie 10zł <input type="checkbox" value="10"></label><br>
+                    <label for="mycie">Woskowanie 15zł <input type="checkbox" value="15"></label><br>
+                    <label for="mycie">Odkurzanie 10zł <input type="checkbox" value="10"></label><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Rodzaj pojazdu</legend>
+                        <select name="cars" id="cars">
+                            <option value="1">Mały</option>
+                            <option value="1.1">Średni (+10%)</option>
+                            <option value="1.2">Van (+20%)</option>
+                            <option value="1.45">Bus (+45%)</option>
+                        </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Karta stałego klienta</legend>
+                    <label for="membercard">Brak <input type="radio" value="1" checked></label><br>
+                    <label for="membercard">Srebrna <input type="radio" value="0.95"></label><br>
+                    <label for="membercard">Złota <input type="radio" value="0.85"></label><br>
+                </fieldset>
+                <input type="reset" value="Wyczyść">
+                <input type="submit" value="Oblicz">
+            </form>
+            <img src="img/hand_m.jpg" alt="mycie ręczne">
+            </div>
+        </main>
+        <aside>
+            <h2>Rezerwacja na godzine</h2>
+            <article>
+                Rezerwacja na godzinę - rezerwuj termin mycia samochodu. Masz mało czasu? Nie lubisz czekać? Zarezerwuj mycie pojazdu na konkretną godzinę
+            </article>
+        </aside>
+        </div>
+        <footer>
+            <p>Bartłomiej Papis 3i</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+  --header-font-color: #4040bf;
+  --bg-color: #d9d9f2;
+  --footer-font: red;
+  --header-line: #4040bf;
+}
+
+.container {
+  width: 75%;
+}
+
+.container header {
+  height: 100px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  display: flex;
+  border-top: solid 1px #4040bf;
+  border-bottom: solid 1px #4040bf;
+  align-items: center;
+}
+
+.container header h1 {
+  width: 60%;
+  text-align: center;
+  color: var(--header-font-color);
+  font-variant: small-caps;
+}
+
+.container header h1 span {
+  text-transform: uppercase;
+  font-size: 1.3em;
+  letter-spacing: .3em;
+}
+
+.container header nav {
+  width: 30%;
+}
+
+.container header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.container header nav ul a {
+  width: 8em;
+  text-decoration: none;
+  text-align: center;
+  color: var(--header-font-color);
+  background-color: var(--bg-color);
+  border-radius: 0.8em;
+}
+
+.container header nav ul a li {
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
+}
+
+.container header nav ul .active {
+  background-color: #4040bf;
+  color: #d9d9f2;
+}
+
+.container .mainpage {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.container .mainpage main {
+  width: 60%;
+  background-color: var(--bg-color);
+  border-radius: 1em;
+  box-shadow: inset 0 0 5px #4040bf;
+}
+
+.container .mainpage main h2 {
+  margin-top: 1em;
+  text-align: center;
+}
+
+.container .mainpage main .mainflex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1em;
+}
+
+.container .mainpage main .mainflex form {
+  width: 55%;
+  margin-top: .3em;
+  margin-bottom: .3em;
+}
+
+.container .mainpage main .mainflex form fieldset {
+  margin: 1em;
+}
+
+.container .mainpage main .mainflex form fieldset label {
+  margin: 1em;
+}
+
+.container .mainpage main .mainflex form input {
+  margin: .5em;
+  padding: .5em;
+}
+
+.container .mainpage main .mainflex img {
+  height: 167px;
+  width: 250px;
+}
+
+.container .mainpage aside {
+  width: 30%;
+  background-color: var(--bg-color);
+  border-radius: 1em;
+  padding: 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: inset 0 0 5px #4040bf;
+}
+
+.container .mainpage aside h2 {
+  padding: 1em;
+}
+
+.container footer {
+  height: 100px;
+  border: 1px solid var(--header-line);
+  border-radius: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--header-line);
+  letter-spacing: .4em;
+  font-weight: bold;
+}
