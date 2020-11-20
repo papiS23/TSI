@@ -75,30 +75,19 @@
 
 @media (min-width: 1024px) {
   .container {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 100px auto 100px;
+    grid-template-areas: "header header main aside footer footer ";
   }
   .container header {
     width: 100vw;
-    margin-bottom: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    grid-area: "header";
   }
   .container main {
-    width: 60vw;
-  }
-  .container main article {
-    width: 40%;
+    grid-area: "main";
   }
   .container aside {
-    width: 40vw;
-  }
-  .container aside article {
-    width: 40%;
-  }
-  .container footer {
-    margin-top: auto;
+    grid-area: "aside";
   }
 }
