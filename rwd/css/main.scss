@@ -94,6 +94,9 @@
             article{
 
             }
+            article:nth-of-type(n+7){
+                display: block;
+            }
         }
         aside{
             grid-row: 2/3;
