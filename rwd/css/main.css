@@ -76,11 +76,11 @@
   }
 }
 
-@media (min-width: 1068px) {
+@media (min-width: 1024px) {
   .container {
     display: grid;
     grid-template-columns: 60% 40%;
-    grid-template-rows: 100px auto 100px;
+    grid-template-rows: 100px auto auto;
   }
   .container header {
     display: flex;
@@ -94,12 +94,18 @@
     grid-column: 1/2;
     grid-row: 2/3;
   }
+  .container main article {
+    margin: .9em;
+  }
   .container main article:nth-of-type(n+7) {
     display: block;
   }
   .container aside {
     grid-row: 2/3;
     grid-column: 2/3;
+  }
+  .container aside article {
+    margin: .6em;
   }
   .container footer {
     grid-row: 3/4;
