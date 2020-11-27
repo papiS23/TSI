@@ -1,0 +1,106 @@
+body * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+ 
+body div {
+    background-color: hsl(220, 40%, 80%);
+    padding: 1em;
+ 
+}
+ 
+div>* {
+    padding: 1em;
+}
+ 
+div>header {
+    background-color: hsl(220, 50%, 80%);
+ 
+}
+ 
+h1 {
+    color: hsl(220, 40%, 40%);
+    text-align: center;
+}
+ 
+header nav {
+    background-color: hsl(220, 70%, 80%);
+}
+ 
+nav ul {
+    list-style: none;
+}
+ 
+nav li {
+    margin: 1%;
+}
+ 
+nav a {
+    display: block;
+    padding: .4em;
+    border-radius: .4em;
+    text-decoration: none;
+    text-align: center;
+    background-color: hsl(220, 40%, 90%);
+    color: hsl(220, 40%, 40%);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+ 
+section {
+    background-color: hsl(220, 60%, 70%);
+    /* margin: 1% 0; */
+ 
+}
+ 
+section article {
+    margin: 1%;
+    border: 1px solid hsl(220, 40%, 40%);
+    padding: .5em;
+    color: hsl(220, 40%, 40%);
+}
+ 
+section footer {
+    text-align: right;
+    margin-top: 1%;
+}
+ 
+section article a {
+    background-color: hsl(220, 30%, 40%);
+    color: hsl(220, 50%, 80%);
+    padding: .2em;
+    border-radius: .2em;
+}
+ 
+div>main {
+    background-color: hsl(220, 70%, 80%);
+ 
+}
+ 
+main article {
+    margin: 1%;
+    border: 1px solid hsl(210, 60%, 30%);
+    padding: .5em;
+    color: hsl(210, 60%, 30%);
+ 
+}
+ 
+main article:nth-last-of-type(1),
+main article:nth-last-of-type(2) {}
+ 
+main footer {
+    text-align: right;
+ 
+}
+ 
+div>footer {
+    text-align: center;
+    color: hsl(220, 40%, 40%);
+ 
+}
+ 
+aside article {
+    display: none;
+}
