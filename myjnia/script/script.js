@@ -9,20 +9,20 @@ let cena = 0;
 function oblicz_usluge(){
     for(let i = 0; i< usluga.length; i++){
         if(usluga[i].checked == true){
-            cena = cena + parseInt(usluga[i].getAttribute("value"));
-            console.log(cena);
+            cena = cena + usluga[i].getAttribute("value");
+            console.log(usluga[i].getAttribute("value"));
         }
     }
     for(let i = 0; i < pojazd.length; i++){
         if(pojazd[i].checked == true){
-            cena = cena * parseInt(pojazd[i].getAttribute("value"));
-            console.log(cena);
-    }
+            cena = cena * pojazd[i].getAttribute("value");
+            console.log(pojazd[i].getAttribute("value"));
+        }
     }
     for(let i = 0; i < karta.length; i++){
         if(karta[i].checked == true){
-            cena = cena * parseInt(karta[i].getAttribute("value"));
-            console.log(cena);
+            cena = cena * karta[i].getAttribute("value");
+            console.log(karta[i].getAttribute("value"));
         }
     }
     wynik.innerHTML = `Cena wynosi: ${cena}zł`;
@@ -30,5 +30,5 @@ function oblicz_usluge(){
     return cena;
 }
 
-submit.onclick = oblicz_usluge();
+submit.addEventListener("click", oblicz_usluge);
 
