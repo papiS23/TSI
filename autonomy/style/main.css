@@ -40,7 +40,7 @@
   border-radius: 5px;
 }
 
-.container header ul li a:hover {
+.container header ul li .active {
   background-color: #56c9d6;
   transition-duration: .5s;
 }

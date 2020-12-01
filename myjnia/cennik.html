@@ -26,25 +26,25 @@
                 <label for="name">Podaj imię: <input type="text" required placeholder="Wpisz swoje imię"></label>
                 <fieldset class="usluga">
                     <legend>Usługa</legend>
-                    <label for="mycie">Mycie zewnętrzne 30zł <input type="checkbox" value="30" checked disabled></label><br>
-                    <label for="mycie">Suszenie 10zł <input type="checkbox" value="10"></label><br>
-                    <label for="mycie">Woskowanie 15zł <input type="checkbox" value="15"></label><br>
-                    <label for="mycie">Odkurzanie 10zł <input type="checkbox" value="10"></label><br>
+                    <label for="mycie">Mycie zewnętrzne 30zł <input type="checkbox" value="30" class="input" checked disabled></label><br>
+                    <label for="mycie">Suszenie 10zł <input type="checkbox" value="10" class="input"></label><br>
+                    <label for="mycie">Woskowanie 15zł <input type="checkbox" value="15" class="input"></label><br>
+                    <label for="mycie">Odkurzanie 10zł <input type="checkbox" value="10" class="input"></label><br>
                 </fieldset>
                 <fieldset class="pojazd">
                     <legend>Rodzaj pojazdu</legend>
                     <select name="cars" id="cars">
-                        <option value="1">Mały</option>
-                        <option value="1.1">Średni (+10%)</option>
-                        <option value="1.2">Van (+20%)</option>
-                        <option value="1.45">Bus (+45%)</option>
+                        <option value="1" class="input">Mały</option>
+                        <option value="1.1" class="input">Średni (+10%)</option>
+                        <option value="1.2" class="input">Van (+20%)</option>
+                        <option value="1.45" class="input">Bus (+45%)</option>
                     </select>
                 </fieldset>
                 <fieldset class="karta">
                     <legend>Karta stałego klienta</legend>
-                    <label for="membercard" name="Karta">Brak <input type="radio" value="1" name="Karta" checked></label><br>
-                    <label for="membercard" name="Karta">Srebrna <input type="radio" name="Karta" value="0.95"></label><br>
-                    <label for="membercard" name="Karta">Złota <input type="radio" name="Karta" value="0.85"></label><br>
+                    <label for="membercard" name="Karta">Brak <input type="radio" value="1" name="Karta" checked class="input"></label><br>
+                    <label for="membercard" name="Karta">Srebrna <input type="radio" name="Karta" value="0.95" class="input"></label><br>
+                    <label for="membercard" name="Karta">Złota <input type="radio" name="Karta" value="0.85" class="input"></label><br>
                 </fieldset>
                 <input type="reset" value="Wyczyść" id="clear" class="button">
                 <input type="submit" id="submit" value="Oblicz" class="button">
