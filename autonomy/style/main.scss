@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
+    scroll-behavior: smooth;
 }
 
 .container{
@@ -13,6 +14,8 @@
         justify-content: space-between;
         align-items: center;
         background-color: #180E0B;
+        position: fixed;
+        top: 0px;
         h1{
             margin-left: 15%;
             a{
@@ -33,11 +36,10 @@
                     border-radius: 5px;
 
                 }
-                // a:hover{
-                //     background-color: #56c9d6;
-                //     transition-duration: .5s;
-                //     // nie umielem zrobic inaczej wiec zrobilem hovera
-                // }
+                a:hover{
+                    background-color: #56c9d6;
+                    transition-duration: .5s;
+                }
                 .active{
                     background-color: #56c9d6;
                     transition-duration: .5s;

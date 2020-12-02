@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Raleway', sans-serif;
+  scroll-behavior: smooth;
 }
 
 .container header {
@@ -12,6 +13,8 @@
   justify-content: space-between;
   align-items: center;
   background-color: #180E0B;
+  position: fixed;
+  top: 0px;
 }
 
 .container header h1 {
@@ -38,6 +41,11 @@
   color: white;
   padding: .5em;
   border-radius: 5px;
+}
+
+.container header ul li a:hover {
+  background-color: #56c9d6;
+  transition-duration: .5s;
 }
 
 .container header ul li .active {
