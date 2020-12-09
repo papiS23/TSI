@@ -4,14 +4,14 @@ const h1 = document.querySelector('#h1');
 console.log(all_a);
 
 all_a.addEventListener("mousedown", () => {
-        for (let i = 0; i < a.length; i++) {
-            a[i].classList.remove('active');
-        }
-        for(let i = 0; i < a.length; i++){
-        a[i].addEventListener("mouseup", ()=>{
-            a[i].classList.add('active');
-        })
-        }
+    for (let i = 0; i < a.length; i++) {
+        a[i].classList.remove('active');
+    }
+    for(let i = 0; i < a.length; i++){
+    a[i].addEventListener("mouseup", ()=>{
+        a[i].classList.add('active');
+    })
+    }
 })
 
 h1.addEventListener("click", ()=>{
