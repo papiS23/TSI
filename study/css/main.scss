@@ -8,6 +8,8 @@
 body{
 }
 .container{
+    width: 100%;
+    height: 100%;
     header{
         width: 100%;
         height: 100px;
@@ -67,7 +69,7 @@ body{
                 margin: 1%;
                 transition-duration: 1s;
             }
-            article:hover{
+            article{
                 border-radius: 1em;
                 box-shadow: 0 0 2em black;
                 transition-duration: 1s;
@@ -89,6 +91,39 @@ body{
             article{
                 color: #ffffff;
                 padding: 1em;
+                margin: 1%;
+            }
+        }
+    }
+    #kontakt{
+        width: 100%;
+        background-color: #B5E2FA;
+        h2{
+            font-size: 40px;
+            text-align: center;
+            padding: 1em;
+            color: #fff;
+        }
+        .adress{
+            display: flex;
+            justify-content: center;
+            iframe{
+                padding: 1em;
+            }
+            .adress-text{
+                padding: 1em;
+                img{
+                    width: 30px;
+                }
+                a{
+                    text-decoration: none;
+                    color: #fff;
+                    font-size: 20px;
+                }
+                .tel, .email, .adress{
+                    display: flex;
+                    align-items: center;
+                }
             }
         }
     }
