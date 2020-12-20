@@ -2,12 +2,15 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Righteous', cursive;
+}
+
+.container {
+  background: #5f5f79;
 }
 
 .container header {
   width: 85vw;
-  height: 20vh;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -59,6 +62,10 @@
 }
 
 @media (max-width: 800px) {
+  .container header {
+    flex-wrap: wrap;
+    padding-top: 1em;
+  }
   .container header .logo .logo-img {
     width: 20px;
   }
@@ -70,5 +77,16 @@
   }
   .container header nav {
     display: none;
+  }
+  .container header .showMenu {
+    display: flex;
+    width: 100%;
+  }
+  .container header .showMenu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
   }
 }
