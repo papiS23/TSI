@@ -2,25 +2,35 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: 'Righteous', cursive;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 .container{
-    background: #5f5f79;
+    width: 100%;
     header{
-        width: 85vw;
+        width: 100%;
         margin: auto;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        position: sticky;
+        top: 0px;
+        background-color: #fff;
         .logo{
             display: flex;
             align-items: center;
+            margin-left: 5%;
             .logo-img{
                 width: 40px;
             }
             .logo-text{
-
+            }
+            a{
+                color: black;
+                text-decoration: none;
             }
         }
         .hamburger{
@@ -28,6 +38,7 @@
             background: transparent;
             border: none;
             cursor: pointer;
+            margin-right: 5%;
             #hamburger{
                 width: 20px;
             }
@@ -37,27 +48,36 @@
         }
         nav{
             width: 30%;
+            margin-right: 5%;
             ul{
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 list-style: none;
                 li{
-                    padding: 20px;
+                    padding: 8px;
                     a{
                         color: black;
                         text-decoration: none;
+                        outline: none;
                     }
+                }
+                .active{
+                    background-color: #A6D9F7;
+                    border-radius: 2em;
+                    animation: menu .5s;
                 }
             }
         }
+    }
+    #front-img{
+        width: 100%;
     }
 }
 @media (max-width:800px){
     .container{
         header{
             flex-wrap: wrap;
-            padding-top: 1em;
             .logo{
                 .logo-img{
                     width: 20px;
@@ -71,10 +91,15 @@
             }
             nav{
                 display: none;
+                margin-right: 0px;
             }
             .showMenu{
                 display: flex;
                 width: 100%;
+                position: absolute;
+                top: 44px;
+                background-color: #fff;
+                animation: hamburgerMenu .5s ease;
                 ul{
                     display: flex;
                     flex-direction: column;
@@ -84,5 +109,21 @@
                 }
             }
         }
+    }
+}
+@keyframes menu{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+@keyframes hamburgerMenu{
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(0%);
     }
 }
