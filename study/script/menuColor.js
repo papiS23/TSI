@@ -1,13 +1,18 @@
 const li = document.querySelectorAll('#menu ul li');
-const menu = document.querySelector('#menu');
+const logo = document.querySelector('.logo');
 
-menu.addEventListener('mousedown', ()=>{
-    for(let i = 0; i<li.length; i++){
-        li[i].classList.remove('active');
+for(let i=0; i<li.length;i++){
+    li[i].addEventListener('click', ()=>{
+        for(let k=0; k<li.length; k++){
+            li[k].classList.remove('active');
+        }
+        li[i].classList.add('active')
+    })
+}
+
+logo.addEventListener('click', ()=>{
+    for(let k=0; k<li.length; k++){
+        li[k].classList.remove('active');
     }
-    for(let i = 0; i<li.length; i++){
-        li[i].addEventListener('mouseup',()=>{
-            li[i].classList.add('active');
-        })
-    }
+    li[0].classList.add('active');
 })

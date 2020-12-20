@@ -77,8 +77,8 @@
 }
 
 .container header nav ul .active {
-  background-color: #A6D9F7;
   border-radius: 2em;
+  background-color: #A6D9F7;
   animation: menu .5s;
 }
 
@@ -123,9 +123,11 @@
 @keyframes menu {
   0% {
     opacity: 0;
+    border-radius: 0;
   }
   100% {
     opacity: 100%;
+    border-radius: 2em;
   }
 }
 
