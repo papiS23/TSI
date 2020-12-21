@@ -12,12 +12,10 @@
 
 .container header {
   width: 100%;
-  margin: auto;
+  height: 10vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 1em;
-  padding-bottom: 1em;
   position: sticky;
   top: 0px;
   background-color: #fff;
@@ -26,7 +24,7 @@
 .container header .logo {
   display: flex;
   align-items: center;
-  margin-left: 5%;
+  margin-left: 10%;
 }
 
 .container header .logo .logo-img {
@@ -43,7 +41,7 @@
   background: transparent;
   border: none;
   cursor: pointer;
-  margin-right: 5%;
+  margin-right: 10%;
 }
 
 .container header .hamburger #hamburger {
@@ -56,7 +54,7 @@
 
 .container header nav {
   width: 30%;
-  margin-right: 5%;
+  margin-right: 10%;
 }
 
 .container header nav ul {
@@ -83,11 +81,15 @@
 }
 
 .container main {
-  width: 85%;
+  width: 80%;
   margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.container main .main-text {
+  margin-left: 40px;
 }
 
 .container main .main-text h2 {
