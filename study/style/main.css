@@ -82,8 +82,32 @@
   animation: menu .5s;
 }
 
-.container #front-img {
-  width: 100%;
+.container main {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container main .main-text h2 {
+  font-size: 40px;
+}
+
+.container main .main-text a {
+  text-decoration: none;
+  color: black;
+}
+
+.container main .main-text a .main-button {
+  padding: 0.5em 2em 0.5em 2em;
+  background-color: #A6D9F7;
+  border: none;
+  border-radius: 0.3em;
+}
+
+.container main .main-text a .main-button:focus {
+  outline: none;
 }
 
 @media (max-width: 800px) {

@@ -68,8 +68,31 @@
             }
         }
     }
-    #front-img{
-        width: 100%;
+    main{
+        width: 85%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .main-text{
+            h2{
+                font-size: 40px;
+            }
+            a{
+                text-decoration: none;
+                color: black;
+                .main-button{
+                    padding: 0.5em 2em 0.5em 2em;
+                    background-color: #A6D9F7;
+                    border: none;
+                    border-radius: 0.3em;
+                    
+                }
+                .main-button:focus{
+                    outline: none;
+                }
+            }
+        }
     }
 }
 @media (max-width:800px){
