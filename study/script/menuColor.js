@@ -1,5 +1,5 @@
 const li = document.querySelectorAll('#menu ul li');
-const logo = document.querySelector('.logo');
+const logo = document.querySelector('#logo');
 
 for(let i=0; i<li.length;i++){
     li[i].addEventListener('click', ()=>{

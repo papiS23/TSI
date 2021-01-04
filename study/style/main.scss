@@ -17,7 +17,8 @@
         position: sticky;
         top: 0px;
         background-color: #fff;
-        .logo{
+        // margin-bottom: 12vh;
+        #logo{
             display: flex;
             align-items: center;
             margin-left: 10%;
@@ -68,6 +69,7 @@
     }
     main{
         width: 80%;
+        height: 90vh;
         margin: auto;
         display: flex;
         justify-content: space-between;
@@ -92,13 +94,16 @@
                 }
             }
         }
+        .main-img{
+            height: 100%;
+        }
     }
 }
 @media (max-width:800px){
     .container{
         header{
             flex-wrap: wrap;
-            .logo{
+            #logo{
                 .logo-img{
                     width: 20px;
                 }
@@ -117,7 +122,7 @@
                 display: flex;
                 width: 100%;
                 position: absolute;
-                top: 44px;
+                top: 93.19px;
                 background-color: #fff;
                 animation: hamburgerMenu .5s ease;
                 ul{
@@ -127,6 +132,14 @@
                     justify-content: center;
                     margin: auto;
                 }
+            }
+        }
+        main{
+            .main-text{
+
+            }
+            .main-img{
+                display: none;
             }
         }
     }
