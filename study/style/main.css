@@ -66,6 +66,8 @@
 
 .container header nav ul li {
   padding: 8px;
+  background-color: #fff;
+  border-radius: 2em;
 }
 
 .container header nav ul li a {
@@ -81,13 +83,14 @@
 }
 
 .container main {
-  width: 100%;
-  height: 90vh;
-  margin-top: 10vh;
-  margin-left: 10%;
+  width: 100vw;
+  height: 100vh;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+}
+
+.container main .main-text {
+  padding-left: 10%;
 }
 
 .container main .main-text h2 {
@@ -111,7 +114,7 @@
 }
 
 .container main .main-img {
-  height: 100%;
+  height: 100vh;
 }
 
 @media (max-width: 800px) {
