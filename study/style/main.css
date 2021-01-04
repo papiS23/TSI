@@ -16,9 +16,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: sticky;
+  position: absolute;
   top: 0px;
-  background-color: #fff;
+  background-color: transparent;
 }
 
 .container header #logo {
@@ -81,9 +81,10 @@
 }
 
 .container main {
-  width: 80%;
+  width: 100%;
   height: 90vh;
-  margin: auto;
+  margin-top: 10vh;
+  margin-left: 10%;
   display: flex;
   justify-content: space-between;
   align-items: center;
