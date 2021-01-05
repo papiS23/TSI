@@ -1,5 +1,6 @@
 const li = document.querySelectorAll('#menu ul li');
 const logo = document.querySelector('#logo');
+const offert_button = document.querySelector('#offert_button');
 
 for(let i=0; i<li.length;i++){
     li[i].addEventListener('click', ()=>{
@@ -15,4 +16,11 @@ logo.addEventListener('click', ()=>{
         li[k].classList.remove('active');
     }
     li[0].classList.add('active');
+})
+
+offert_button.addEventListener('click', ()=>{
+    for(let i=0; i<li.length; i++){
+        li[i].classList.remove('active');
+    }
+    li[1].classList.add('active');
 })
