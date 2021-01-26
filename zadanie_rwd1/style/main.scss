@@ -6,72 +6,72 @@
 }
 .container{
     background-color: #ece4ca;
-    header{
+    .container__header{
         width: 100%;
         border: solid 1px red;
         border-radius: 1em;
         background-color: #e9d594;
         margin-bottom: 1em;
-        p{
+        .container__header__title{
             padding: 1em;
             color: blue;
         }
     }
-    nav{
+    .container__nav{
         width: 100%;
         border: solid 1px red;
         border-radius: 1em;
         background-color: #e9d594;
         margin-bottom: 1em;
-        ul{
+        .container__nav__ul{
             padding: 1em;
             list-style: none;
         }
     }
-    main{
+    .container__main{
         width: 100%;
         border: solid 1px red;
         border-radius: 1em;
         background-color: #e9d594;
         margin-bottom: 1em;
-        h2{
+        .container__main__title{
             padding: 1em;
             color: blue;
         }
-        article{
-            padding: 1em;
-            color: blue;
-        }
-    }
-    aside{
-        width: 100%;
-        border: solid 1px red;
-        border-radius: 1em;
-        background-color: #e9d594;
-        margin-bottom: 1em;
-        p{
+        .container__main__article{
             padding: 1em;
             color: blue;
         }
     }
-    .advertising{
+    .container__aside{
         width: 100%;
         border: solid 1px red;
         border-radius: 1em;
         background-color: #e9d594;
         margin-bottom: 1em;
-        p{
+        .container__aside__paragraph{
             padding: 1em;
             color: blue;
         }
     }
-    footer{
+    .container__advertising{
         width: 100%;
         border: solid 1px red;
         border-radius: 1em;
         background-color: #e9d594;
         margin-bottom: 1em;
-        p{
+        .container__advertising__paragraph{
+            padding: 1em;
+            color: blue;
+        }
+    }
+    .container__footer{
+        width: 100%;
+        border: solid 1px red;
+        border-radius: 1em;
+        background-color: #e9d594;
+        margin-bottom: 1em;
+        .container__footer__paragraph{
             padding: 1em;
             color: blue;
         }
@@ -85,31 +85,31 @@
         grid-template-columns: 1fr 2fr;
         grid-template-rows: 1fr 1fr auto 1fr;
         column-gap: 1em;
-        header{
+        .container__header{
             grid-column: 1/-1;
             grid-row: 1/2;
         }
-        nav{
+        .container__nav{
             grid-column: 1/-1;
             grid-row: 2/3;
-            ul{
+            .container__nav__ul{
                 display: flex;
                 justify-content: space-between;
                 }
         }
-        main{
+        .container__main{
             grid-column: 2/-1;
             grid-row: 3/4;
         }
-        aside{
+        .container__aside{
             grid-column: 1/2;
             grid-row: 3/4;
         }
-        .advertising{
+        .container__advertising{
             grid-column: 1/2;
             grid-row: 4/-1;
         }
-        footer{
+        .container__footer{
             grid-column: 2/-1;
             grid-row: 4/-1;
         }
@@ -119,41 +119,41 @@
     .container{
         grid-template-columns: 1fr 2fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
-        header{
+        .container__header{
             grid-column: 1/-1;
-            p{
+            .container__header__title{
                 color: #ff0000;
             }
         }
-        nav{
+        .container__nav{
             grid-column: 1/2;
             grid-row: 2/4;
-            ul{
+            .container__nav__ul{
                 display: block;
             }
         }
-        main{
+        .container__main{
             grid-column: 2/3;
             grid-row: 2/4;
-            h2, article{
+            .container__main__title, .container__main__article{
                 color: #ff0000;
             }
         }
-        aside{
+        .container__aside{
             grid-column: 3/-1;
             grid-row: 2/3;
-            p{
+            .container__aside__paragraph{
                 color: #ff0000;
             }
         }
-        .advertising{
+        .container__advertising{
             grid-column: 3/-1;
             grid-row: 3/4;
-            p{
+            .container__advertising__paragraph{
                 color: #ff0000;
             }
         }
-        footer{
+        .container__footer{
             grid-column: 1/-1;
             grid-row: -2/-1;
             margin-bottom: 0;
