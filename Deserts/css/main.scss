@@ -13,6 +13,7 @@
         position: absolute;
         width: 100vw;
         height: 100vh;
+        // filter: brightness(70%);
         z-index: -1;
     }
     .image--sahara{
@@ -42,13 +43,7 @@
             width: 40%;
             margin-left: 5%;
             font-size: 50px;
-            background-image: linear-gradient(to left, rgb(241, 151, 16),  rgb(223, 185, 19));
-            background-size: 100%;
-            background-repeat: repeat;
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent; 
-                    -moz-background-clip: text;
-                    -moz-text-fill-color: transparent;
+            color: rgb(216, 196, 18);
         }
         .main__grid-container{
             width: 60%;
@@ -59,14 +54,17 @@
             .main__desert{
                 width: 100%;
                 height: 100%;
-                border-radius: 1em;
+                border-radius: .3em;
                 position: relative;
-                box-shadow: 10px 10px 18px black;
+                filter: brightness(90%);
+                -webkit-box-shadow: 0px 0px 29px 8px rgba(0,0,0,0.7);
+                -moz-box-shadow: 0px 0px 29px 8px rgba(0,0,0,0.7);
+                box-shadow: 0px 0px 29px 8px rgba(0,0,0,0.7);
                 overflow: hidden;
                 cursor: pointer;
                 .desert__image{
                     width: 100%;
-                    border-radius: 1em;
+                    border-radius: .3em;
                     height: 100%;
                     transition: transform .5s ease;
                 }
