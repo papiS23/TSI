@@ -21,6 +21,20 @@
   background-size: cover;
   -webkit-filter: brightness(50%);
           filter: brightness(50%);
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.container .bg-image--gobi {
+  background-image: url(../img/gobi-img.jpg);
+}
+
+.container .bg-image--kalahari {
+  background-image: url(../img/kalahari-img.jpg);
+}
+
+.container .bg-image--australia {
+  background-image: url(../img/australia-img.jpg);
 }
 
 .container .header {
@@ -82,11 +96,14 @@
   border-radius: .5em;
   width: 100%;
   height: 100%;
+  -webkit-filter: brightness(80%);
+          filter: brightness(80%);
 }
 
 .container .main .main__grid-container .main__desert .desert__text {
   position: absolute;
   color: white;
+  max-width: 85%;
   top: 20px;
   left: 20px;
 }
