@@ -90,6 +90,7 @@
 .container .main .main__grid-container .main__desert {
   position: relative;
   border-radius: .5em;
+  cursor: pointer;
 }
 
 .container .main .main__grid-container .main__desert .desert__image {
