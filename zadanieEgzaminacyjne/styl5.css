@@ -1,0 +1,58 @@
+body{
+    margin: 0;
+}
+header{
+    width: 100%;
+    background-color: #1C59A7;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+header h1{
+    display: flex;
+}
+main{
+    display: flex;
+}
+.lewy{
+    background-color: #3A70B5;
+    width: 33%;
+    height: 200px;
+}
+.srodkowy{
+    background-color: #5A8AC8;
+    width: 33%;
+    height: 200px;
+}
+.prawy{
+    background-color: #86ACDD;
+    text-align: center;
+    width: 34%;
+    height: 200px;
+}
+.prawy p a{
+    background-color: yellow;
+    color: blue;
+    padding: 10px;
+}
+aside{
+    background-color: #86ACDD;
+    text-align: center;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+aside h2{
+    margin-top: 0;
+}
+footer{
+    background-color: #1C59A7;
+    color: white;
+}
+footer span{
+    font-style: italic;
+}
