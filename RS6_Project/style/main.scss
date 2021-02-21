@@ -8,6 +8,7 @@
     width: 100vw;
     height: 100vh;
     background-color: #E8E8E8;
+    position: absolute;
     .header{
         width: 100%;
         height: 20vh;
@@ -60,9 +61,21 @@
             height: 64px;
             background-color: #E8E8E8;
             font-size: 24px;
+            &:hover{
+                border: solid 2px #FB0000;
+            }
         }
         &__front-img,&__container{
             margin-bottom: 7%;
         }
+    }
+}
+@keyframes slide-in{
+    from{
+        transform: translateY(100%);
+        visibility: visible;
+    }
+    to{
+        transform: translateY(0%);
     }
 }
