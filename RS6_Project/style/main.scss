@@ -60,6 +60,14 @@
             height: 64px;
             background-color: #E8E8E8;
             font-size: 24px;
+            cursor: pointer;
+            &:hover{
+                border: solid 2px #FB0000;
+            }
+            &:focus{
+                outline: none;
+                border: solid 2px #FB0000;
+            }
         }
         &__front-img,&__container{
             margin-bottom: 7%;

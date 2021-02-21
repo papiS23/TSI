@@ -89,6 +89,16 @@
   height: 64px;
   background-color: #E8E8E8;
   font-size: 24px;
+  cursor: pointer;
+}
+
+.container .main__button:hover {
+  border: solid 2px #FB0000;
+}
+
+.container .main__button:focus {
+  outline: none;
+  border: solid 2px #FB0000;
 }
 
 .container .main__front-img, .container .main__container {
