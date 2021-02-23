@@ -16,8 +16,12 @@ html{
         height: 10vh;
         display: flex;
         align-items: center;
-        &__title{
+        &__href{
+            color: black;
+            text-decoration: none;
             margin-left: 5%;
+        }
+        &__title{
             font-size: 36px;
         }
         &__p-letter{
@@ -47,8 +51,9 @@ html{
             -webkit-text-fill-color: transparent;
         }
         &__arrow{
-            margin-bottom: 40%;
             width: 80px;
+            transform: rotate(90deg);
+            margin-bottom: 40%;
             cursor: pointer;
             transition-duration: .3s;
             &:hover{
@@ -66,7 +71,6 @@ html{
         position: relative;
         &__container{
             width: 35%;
-            // height: 50%;
             text-align: center;
             display: flex;
             flex-direction: column;
@@ -95,13 +99,14 @@ html{
                 opacity: 35%;
             }
             &--mid{
-                top: 30%;
-                left: 20%;
+                top: 35%;
+                left: 40%;
                 opacity: 35%;
             }
             &--small{
                 bottom: -100px;
-                opacity: 35%;
+                left: 20%;
+                opacity: 100%;
                 // left: 40vw;
             }
         }
@@ -113,6 +118,7 @@ html{
         display: flex;
         align-items: center;
         justify-content: space-between;
+        z-index: 2;
         &__href{
             color: black;
             text-decoration: none;
@@ -120,9 +126,16 @@ html{
         &__p-letter{
             color: #FB0000;
         }
-        &__contact{
-            color: black;
-            text-decoration: none;
+        &__arrow{
+            cursor: pointer;
+        }
+        &__arrow{
+            width: 30px;
+            transform: rotate(270deg);
+            transition-duration: .3s;
+            &:hover{
+                margin-bottom: 20px;
+            }
         }
     }
 }
