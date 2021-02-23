@@ -96,11 +96,11 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 .container .aside__container {
   width: 35%;
-  height: 40%;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -130,12 +130,34 @@ html {
 
 .container .aside__text {
   width: 60%;
+  font-size: 24px;
+}
+
+.container .aside__dot {
+  position: absolute;
+}
+
+.container .aside__dot--big {
+  top: 0;
+  right: -90px;
+  opacity: 35%;
+}
+
+.container .aside__dot--mid {
+  top: 30%;
+  left: 20%;
+  opacity: 35%;
+}
+
+.container .aside__dot--small {
+  bottom: -100px;
+  opacity: 35%;
 }
 
 .container .footer {
   width: 80vw;
-  margin: auto;
   height: 10vh;
+  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

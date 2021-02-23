@@ -63,9 +63,10 @@ html{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        position: relative;
         &__container{
             width: 35%;
-            height: 40%;
+            // height: 50%;
             text-align: center;
             display: flex;
             flex-direction: column;
@@ -84,12 +85,31 @@ html{
         }
         &__text{
             width: 60%;
+            font-size: 24px;
+        }
+        &__dot{
+            position: absolute;
+            &--big{
+                top: 0;
+                right: -90px;
+                opacity: 35%;
+            }
+            &--mid{
+                top: 30%;
+                left: 20%;
+                opacity: 35%;
+            }
+            &--small{
+                bottom: -100px;
+                opacity: 35%;
+                // left: 40vw;
+            }
         }
     }
     .footer{
         width: 80vw;
-        margin: auto;
         height: 10vh;
+        margin: auto;
         display: flex;
         align-items: center;
         justify-content: space-between;
