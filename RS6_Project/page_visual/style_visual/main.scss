@@ -93,6 +93,7 @@ html{
         }
         &__dot{
             position: absolute;
+            z-index: -1;
             &--big{
                 top: 0;
                 right: -90px;
@@ -122,6 +123,9 @@ html{
         &__href{
             color: black;
             text-decoration: none;
+            &--contact:hover{
+                border-bottom: solid 1px #FB0000;
+            }
         }
         &__p-letter{
             color: #FB0000;
