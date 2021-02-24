@@ -9,7 +9,7 @@
 .container {
   width: 100vw;
   height: 100vh;
-  background-color: #E8E8E8;
+  overflow: hidden;
 }
 
 .container .header {
@@ -44,6 +44,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
 }
 
 .container .main__front-img {
@@ -87,7 +88,7 @@
   border: solid 1px #FB0000;
   width: 192px;
   height: 64px;
-  background-color: #E8E8E8;
+  background: transparent;
   font-size: 24px;
   cursor: pointer;
 }
@@ -103,5 +104,25 @@
 
 .container .main__front-img, .container .main__container {
   margin-bottom: 7%;
+}
+
+.container .main__dot {
+  position: absolute;
+  z-index: -1;
+}
+
+.container .main__dot--big {
+  top: -20vh;
+  right: -90px;
+}
+
+.container .main__dot--mid {
+  top: 35%;
+  left: 50%;
+}
+
+.container .main__dot--small {
+  bottom: -100px;
+  left: 30%;
 }
 /*# sourceMappingURL=main.css.map */
