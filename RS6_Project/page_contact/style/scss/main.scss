@@ -30,6 +30,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        position: relative;
         &__container{
             margin-left: 10vw;
             display: flex;
@@ -70,6 +71,16 @@
         }
         &__map{
             margin-right: 10vw;
+            border-radius: 1em;
+            width: 50%;
+        }
+        &__dot{
+            position: absolute;
+            z-index: -1;
+            &--big{
+                top: -20vh;
+                right: -90px;
+            }
         }
     }
     .footer{

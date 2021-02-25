@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+  scroll-behavior: smooth;
+}
+
+.container header {
+  width: 100%;
+  height: 176px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #180E0B;
+  position: fixed;
+  top: 0px;
+}
+
+.container header h1 {
+  margin-left: 15%;
+}
+
+.container header h1 a {
+  text-decoration: none;
+  color: white;
+}
+
+.container header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 15%;
+}
+
+.container header ul li {
+  padding: 1em;
+  display: block;
+}
+
+.container header ul li a {
+  text-decoration: none;
+  color: white;
+  padding: .5em;
+  border-radius: 5px;
+}
+
+.container header ul li a:hover {
+  background-color: #56c9d6;
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
+}
+
+.container header ul li .active {
+  background-color: #56c9d6;
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
+}
+
+.container .bgimg {
+  width: 100%;
+  height: 450px;
+  background-image: url(../imgs/sky.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.container main {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 15% 1fr 1fr 1fr 1fr 15%;
+      grid-template-columns: 15% 1fr 1fr 1fr 1fr 15%;
+      grid-template-areas: ". sec1 sec2 sec3 sec4 .";
+}
+
+.container main section {
+  margin-top: 20%;
+  margin-bottom: 20%;
+}
+
+.container main section h2 {
+  margin-top: 1em;
+}
+
+.container main section p {
+  margin-top: 1em;
+}
+
+.container main .sec1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: sec1;
+}
+
+.container main .sec2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: sec2;
+}
+
+.container main .sec3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: sec3;
+}
+
+.container main .sec4 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+  grid-area: sec4;
+}
+
+.container aside {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  background-color: #372019;
+  -ms-grid-columns: 15% 1fr 1fr 2.5fr 15%;
+      grid-template-columns: 15% 1fr 1fr 2.5fr 15%;
+      grid-template-areas: ". sec11 sec22 sec33 .";
+}
+
+.container aside section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #864d3c;
+  margin-bottom: 4em;
+}
+
+.container aside section h2 {
+  color: #c0745d;
+  padding: 1em;
+  margin-top: 4em;
+}
+
+.container aside section .secinside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: baseline;
+      -ms-flex-pack: baseline;
+          justify-content: baseline;
+  padding: 1em;
+}
+
+.container aside section .secinside img {
+  width: 80px;
+  height: 80px;
+  margin-right: .4em;
+}
+
+.container aside .sec11 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: sec11;
+}
+
+.container aside .sec22 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: sec22;
+}
+
+.container aside .sec33 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: sec33;
+}
+
+.container aside .sec33 img {
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+.container .prefooter {
+  width: 100%;
+  background-color: #261611;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 15% 2fr 1fr 15%;
+      grid-template-columns: 15% 2fr 1fr 15%;
+      grid-template-areas: ". sec111 sec222 .";
+}
+
+.container .prefooter .sec111 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: sec111;
+  color: #704031;
+  margin-top: 4em;
+  margin-bottom: 4em;
+}
+
+.container .prefooter .sec111 h2 {
+  color: #bc765f;
+  margin-bottom: 1em;
+}
+
+.container .prefooter .sec111 article {
+  margin-bottom: 2em;
+}
+
+.container .prefooter .sec222 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: sec222;
+  margin-top: 4em;
+  margin-bottom: 4em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .prefooter .sec222 h2 {
+  color: #bc765f;
+  margin-bottom: 1em;
+}
+
+.container .prefooter .sec222 a {
+  color: #704031;
+  margin-bottom: 1em;
+}
+
+.container footer {
+  width: 100%;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #180e0b;
+  color: #6b2c15;
+}
+/*# sourceMappingURL=main.css.map */

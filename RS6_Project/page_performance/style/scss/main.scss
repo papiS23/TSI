@@ -4,3 +4,145 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.container{
+    width: 100vw;
+    .header{
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        &__href{
+            color: black;
+            text-decoration: none;
+            margin-left: 5%;
+        }
+        &__title{
+            font-size: 36px;
+        }
+        &__p-letter{
+            color: #FB0000;
+        }
+    }
+    .main{
+        width: 100vw;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        &__front-image{
+            width: 100%;
+            height: 610px;
+            object-fit: cover;
+        }
+        &__title{
+            font-size: 200px;
+            position: absolute;
+            top: 460px;
+            background: linear-gradient(to bottom, #FB0000 50%, #000 50%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        &__arrow{
+            width: 80px;
+            transform: rotate(90deg);
+            margin-bottom: 40%;
+            cursor: pointer;
+            transition-duration: .3s;
+            &:hover{
+                margin-bottom: 60%;
+            }
+        }
+    }
+    .aside{
+        width: 90vw;
+        height: 90vh;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        &__container{
+            width: 35%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            &--first{
+                border-right: solid 1px #FB0000;
+            }
+            &--second{
+                border-right: solid 1px #FB0000;
+            }
+        }
+        &__icon{
+            width: 60px;
+        }
+        &__title{
+            font-size: 50px;
+            margin-bottom: 5%;
+            text-align: center;
+        }
+        &__text{
+            width: 60%;
+            font-size: 24px;
+        }
+        &__dot{
+            position: absolute;
+            z-index: -1;
+            &--big{
+                top: 0;
+                right: -90px;
+                opacity: 35%;
+            }
+            &--mid{
+                top: 35%;
+                left: 40%;
+                opacity: 35%;
+            }
+            &--small{
+                bottom: -100px;
+                left: 20%;
+                opacity: 100%;
+                // left: 40vw;
+            }
+        }
+    }
+    .footer{
+        width: 80vw;
+        height: 10vh;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 2;
+        &__href{
+            color: black;
+            text-decoration: none;
+            &--contact:hover{
+                border-bottom: solid 1px #FB0000;
+            }
+        }
+        &__p-letter{
+            color: #FB0000;
+        }
+        &__arrow{
+            cursor: pointer;
+        }
+        &__arrow{
+            width: 30px;
+            transform: rotate(270deg);
+            transition-duration: .3s;
+            &:hover{
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
