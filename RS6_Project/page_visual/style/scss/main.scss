@@ -1,13 +1,5 @@
-@mixin flex-center($jc, $ai, $direction) {
-    display: flex;
-    justify-content: $jc;
-    align-items: $ai;
-    flex-direction: $direction;
-}
-@mixin width-height($width, $height) {
-    width: $width;
-    height: $height;
-}
+@import 'mixins';
+@import 'media';
 *{
     margin: 0;
     padding: 0;
