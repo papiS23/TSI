@@ -1,1 +1,15 @@
-/* No CSS *//*# sourceMappingURL=media.css.map */
+@media only screen and (max-width: 1450px) {
+  .container .main__front-image {
+    height: 400px;
+  }
+  .container .main__title {
+    top: 287px;
+  }
+  .container .main__arrow {
+    margin-bottom: 0;
+  }
+  .container .main__arrow:hover {
+    margin-bottom: 40%;
+  }
+}
+/*# sourceMappingURL=media.css.map */

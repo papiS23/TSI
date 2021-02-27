@@ -8,7 +8,7 @@
 
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .container {
@@ -75,9 +75,9 @@ html {
 }
 
 .container .main__title {
-  font-size: 200px;
+  font-size: 150px;
   position: absolute;
-  top: 460px;
+  top: 497px;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #FB0000), color-stop(50%, #000));
   background: linear-gradient(to bottom, #FB0000 50%, #000 50%);
   background-clip: text;
@@ -121,6 +121,7 @@ html {
 
 .container .aside__container {
   width: 35%;
+  min-height: 30vh;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -146,14 +147,14 @@ html {
 }
 
 .container .aside__title {
-  font-size: 50px;
+  font-size: 45px;
   margin-bottom: 5%;
   text-align: center;
 }
 
 .container .aside__text {
   width: 60%;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .container .aside__dot {
@@ -162,6 +163,7 @@ html {
 }
 
 .container .aside__dot--big {
+  max-height: 100vh;
   top: 0;
   right: -90px;
   opacity: 35%;
@@ -169,6 +171,7 @@ html {
 
 .container .aside__dot--mid {
   top: 35%;
+  max-height: 70vh;
   left: 40%;
   opacity: 35%;
 }
@@ -226,5 +229,20 @@ html {
 
 .container .footer__arrow:hover {
   margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 1450px) {
+  .container .main__front-image {
+    height: 400px;
+  }
+  .container .main__title {
+    top: 287px;
+  }
+  .container .main__arrow {
+    margin-bottom: 0;
+  }
+  .container .main__arrow:hover {
+    margin-bottom: 40%;
+  }
 }
 /*# sourceMappingURL=main.css.map */

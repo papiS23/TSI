@@ -1,5 +1,4 @@
 @import 'mixins';
-@import 'media';
 *{
     margin: 0;
     padding: 0;
@@ -9,7 +8,7 @@
 
 html{
     scroll-behavior: smooth;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .container{
@@ -40,9 +39,9 @@ html{
             object-fit: cover;
         }
         &__title{
-            font-size: 200px;
+            font-size: 150px;
             position: absolute;
-            top: 460px;
+            top: 497px;
             background: linear-gradient(to bottom, #FB0000 50%, #000 50%);
             background-clip: text;
             -webkit-background-clip: text;
@@ -66,6 +65,7 @@ html{
         position: relative;
         &__container{
             width: 35%;
+            min-height: 30vh;
             text-align: center;
             @include flex-center(normal, center, column);
             &--first{
@@ -76,30 +76,33 @@ html{
             }
         }
         &__title{
-            font-size: 50px;
+            font-size: 45px;
             margin-bottom: 5%;
             text-align: center;
         }
         &__text{
             width: 60%;
-            font-size: 24px;
+            font-size: 20px;
         }
         &__dot{
             position: absolute;
             z-index: -1;
             &--big{
+                max-height: 100vh;
                 top: 0;
                 right: -90px;
                 opacity: 35%;
             }
             &--mid{
                 top: 35%;
+                max-height: 70vh;
                 left: 40%;
                 opacity: 35%;
             }
             &--small{
                 bottom: -100px;
                 left: 20%;
+                // max-height: 20vh;
                 opacity: 100%;
                 // left: 40vw;
             }
@@ -133,3 +136,4 @@ html{
         }
     }
 }
+@import 'media';

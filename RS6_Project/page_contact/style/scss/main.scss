@@ -8,6 +8,7 @@
 }
 .container{
     @include width-height(100vw,100vh);
+    overflow: hidden;
     .header{
         @include width-height(100vw,20vh);
         @include flex-center(normal,center,row);
