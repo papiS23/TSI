@@ -1,5 +1,4 @@
 @import 'mixins';
-@import 'media';
 *{
     margin: 0;
     padding: 0;
@@ -81,14 +80,7 @@
                 top: -20vh;
                 right: -90px;
             }
-            &--mid{
-                top: 35%;
-                left: 50%;
-            }
-            &--small{
-                bottom: -100px;
-                left: 30%;
-            }
         }
     }
 }
+@import 'media';
