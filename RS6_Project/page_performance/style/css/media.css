@@ -12,6 +12,9 @@
   .container .main__arrow:hover {
     margin-bottom: 40%;
   }
+  .container .aside__icon {
+    width: 60px;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -48,6 +51,9 @@
   .container .aside__container--third {
     border-bottom: solid 1px #FB0000;
   }
+  .container .aside__icon {
+    width: 40px;
+  }
   .container .aside__dot--mid {
     top: 350px;
     left: -20px;
@@ -64,8 +70,8 @@
   }
   .container .main__title {
     text-align: center;
-    top: 310px;
-    font-size: 80px;
+    top: 392px;
+    font-size: 50px;
   }
   .container .main__arrow {
     width: 30px;
