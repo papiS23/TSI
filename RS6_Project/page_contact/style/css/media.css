@@ -1,1 +1,26 @@
-/* No CSS *//*# sourceMappingURL=media.css.map */
+@media only screen and (max-width: 1450px) {
+  .container .header__title {
+    font-size: 30px;
+    margin-bottom: 3%;
+  }
+  .container .main__title {
+    font-size: 25px;
+  }
+  .container .main__under-title {
+    font-size: 17px;
+  }
+  .container .main__img-link {
+    width: 70px;
+  }
+}
+
+@media only screen and (max-width: 820px) {
+  .container .main__map {
+    display: none;
+  }
+  .container .main__dot--big {
+    top: -45vh;
+    right: -440px;
+  }
+}
+/*# sourceMappingURL=media.css.map */

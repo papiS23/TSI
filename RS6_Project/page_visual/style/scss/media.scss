@@ -2,10 +2,11 @@
     .container{
         .main{
             &__front-image{
-                height: 400px;
+                height: 430px;
             }
             &__title{
-                top: 287px;
+                font-size: 100px;
+                top: 355px;
             }
             &__arrow{
                 margin-bottom: 0;
@@ -15,4 +16,24 @@
             }
         }
     }
+}
+@media only screen and (max-width: 1024px){
+    .container{
+        .main{
+            &__arrow{
+                width: 50px;
+            }
+        }
+        .aside{
+            &__title{
+                font-size: 35px;
+            }
+            &__text{
+                font-size: 15px;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 820px){
+
 }

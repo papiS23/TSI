@@ -86,7 +86,7 @@ html {
 }
 
 .container .main__arrow {
-  width: 80px;
+  width: 70px;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
   margin-bottom: 40%;
@@ -233,16 +233,29 @@ html {
 
 @media only screen and (max-width: 1450px) {
   .container .main__front-image {
-    height: 400px;
+    height: 430px;
   }
   .container .main__title {
-    top: 287px;
+    font-size: 100px;
+    top: 355px;
   }
   .container .main__arrow {
     margin-bottom: 0;
   }
   .container .main__arrow:hover {
     margin-bottom: 40%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .container .main__arrow {
+    width: 50px;
+  }
+  .container .aside__title {
+    font-size: 35px;
+  }
+  .container .aside__text {
+    font-size: 15px;
   }
 }
 /*# sourceMappingURL=main.css.map */
