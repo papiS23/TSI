@@ -8,10 +8,11 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 .container {
-  overflow-x: hidden;
+  overflow: hidden;
   width: 100vw;
 }
 
