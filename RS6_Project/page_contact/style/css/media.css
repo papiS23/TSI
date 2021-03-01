@@ -25,5 +25,8 @@
   .transition__title {
     font-size: 2em;
   }
+  .transition__image {
+    width: 2em;
+  }
 }
 /*# sourceMappingURL=media.css.map */

@@ -275,6 +275,10 @@ html {
   margin-bottom: 20px;
 }
 
+.transition__image {
+  width: 5em;
+}
+
 @media only screen and (max-width: 1450px) {
   .container .main__front-image {
     height: 430px;
@@ -384,6 +388,9 @@ html {
   }
   .transition__title {
     font-size: 2em;
+  }
+  .transition__image {
+    width: 2em;
   }
 }
 /*# sourceMappingURL=main.css.map */

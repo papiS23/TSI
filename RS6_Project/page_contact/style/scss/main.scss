@@ -94,4 +94,9 @@
         }
     }
 }
+.transition{
+    &__image{
+        width: 5em;
+    }
+}
 @import 'media';
