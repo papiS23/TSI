@@ -111,5 +111,8 @@
   .container .aside__dot--small {
     display: none;
   }
+  .transition__title {
+    font-size: 2em;
+  }
 }
 /*# sourceMappingURL=media.css.map */

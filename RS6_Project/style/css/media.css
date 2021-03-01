@@ -75,5 +75,8 @@
     top: -25vh;
     right: -480px;
   }
+  .transition__title {
+    font-size: 2em;
+  }
 }
 /*# sourceMappingURL=media.css.map */

@@ -22,5 +22,8 @@
     top: -45vh;
     right: -440px;
   }
+  .transition__title {
+    font-size: 2em;
+  }
 }
 /*# sourceMappingURL=media.css.map */
