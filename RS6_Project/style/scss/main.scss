@@ -6,6 +6,9 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
+$red-color: #FB0000;
+
 .container{
     @include width-height(100vw,100vh);
     overflow: hidden;
@@ -18,13 +21,13 @@
             margin-left: 10%;
         }
         &__p-letter{
-            color: #FB0000;
+            color: $red-color;
         }
         &__href{
             color: black;
             text-decoration: none;
             margin-right: 10%;
-            border-bottom: solid 1px #FB0000;
+            border-bottom: solid 1px $red-color;
         }
     }
     .main{
@@ -44,7 +47,7 @@
             &::after{
                 content: '';
                 display: block;
-                border: #FB0000 solid 1px;
+                border: $red-color solid 1px;
                 width: 60%;
             }
         }
@@ -58,18 +61,18 @@
             @include flex-center(space-between, normal, row);
         }
         &__button{
-            border: solid 1px #FB0000;
+            border: solid 1px $red-color;
             @include width-height(192px,64px);
             background: transparent;
             font-size: 24px;
             pointer-events: none;
             cursor: pointer;
             &:hover{
-                border: solid 2px #FB0000;
+                border: solid 2px $red-color;
             }
             &:focus{
                 outline: none;
-                border: solid 2px #FB0000;
+                border: solid 2px $red-color;
             }
         }
         &__front-img,&__container{
