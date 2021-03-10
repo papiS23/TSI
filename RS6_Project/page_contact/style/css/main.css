@@ -246,6 +246,9 @@
     top: -45vh;
     right: -440px;
   }
+}
+
+@media only screen and (max-width: 550px) {
   .transition__title {
     font-size: 2em;
   }

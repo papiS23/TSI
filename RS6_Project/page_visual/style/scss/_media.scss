@@ -17,11 +17,6 @@ $red-color: #FB0000;
                 }
             }
         }
-        .aside{
-            &__icon{
-                width: 60px;
-            }
-        }
     }
 }
 @media only screen and (max-width: 1024px){
@@ -57,9 +52,6 @@ $red-color: #FB0000;
                     border-bottom: solid 1px $red-color;
                 }
             }
-            &__icon{
-                width: 40px;
-            }
             &__dot{
                 &--mid{
                     top: 350px;
@@ -83,8 +75,8 @@ $red-color: #FB0000;
         .main{
             &__title{
                 text-align: center;
-                top: 392px;
-                font-size: 50px;
+                top: 310px;
+                font-size: 80px;
             }
             &__arrow{
                 width: 30px;
@@ -125,6 +117,8 @@ $red-color: #FB0000;
             }
         }
     }
+}
+@media only screen and (max-width: 550px){
     .transition{
         &__title{
             font-size: 2em;
