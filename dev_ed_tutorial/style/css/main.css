@@ -1,8 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 button {
@@ -14,20 +13,14 @@ body {
 }
 
 body header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 90%;
   margin: auto;
   height: 10vh;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 body .logo-container, body .nav-links, body .cart {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -37,20 +30,15 @@ body .logo {
 }
 
 body .logo-container {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
 }
 
 body nav {
-  -webkit-box-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
+  flex: 2;
 }
 
 body .nav-links {
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   list-style: none;
 }
 
@@ -61,36 +49,25 @@ body .nav-link {
 }
 
 body .cart {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  flex: 1;
+  justify-content: flex-end;
 }
 
 body main .presentation {
   width: 90%;
   margin: auto;
   min-height: 80vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 body main .presentation .introduction {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
 }
 
 body main .presentation .introduction .intro-text h1 {
   font-size: 44px;
   font-weight: 400;
-  background: -webkit-gradient(linear, left top, right top, from(#494964), to(#6f6f89));
   background: linear-gradient(to right, #494964, #6f6f89);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -129,34 +106,23 @@ body main .presentation .introduction .cta .cta-add {
 
 body main .laptop-select {
   width: 15%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   position: absolute;
   right: 20%;
 }
 
 body main .cover {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  flex: 1;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   height: 60vh;
 }
 
 body main .cover img {
   height: 100%;
-  -webkit-filter: drop-shadow(0px 5px 3px black);
-          filter: drop-shadow(0px 5px 3px black);
-  -webkit-animation: drop 1.5s ease;
-          animation: drop 1.5s ease;
+  filter: drop-shadow(0px 5px 3px black);
+  animation: drop 1.5s ease;
 }
 
 body main .big-circle {
@@ -184,38 +150,20 @@ body main .small-circle {
   z-index: -1;
 }
 
-@-webkit-keyframes drop {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(-80px);
-            transform: translateY(-80px);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-  }
-}
-
 @keyframes drop {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(-80px);
-            transform: translateY(-80px);
+    transform: translateY(-80px);
   }
   100% {
     opacity: 1;
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
+    transform: translateY(0px);
   }
 }
 
 @media screen and (max-width: 1024px) {
   body main .presentation {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   body main .presentation .introduction {
     margin-top: 5vh;
@@ -237,8 +185,7 @@ body main .small-circle {
     bottom: 5%;
     right: 50%;
     width: 50%;
-    -webkit-transform: translate(50%, 5%);
-            transform: translate(50%, 5%);
+    transform: translate(50%, 5%);
   }
   body main .small-circle, body main .medium-circle, body main .big-circle {
     opacity: .2;
