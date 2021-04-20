@@ -1,6 +1,5 @@
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -21,14 +20,10 @@
   height: 100px;
   margin-top: 1em;
   margin-bottom: 1em;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   border-top: solid 1px #4040bf;
   border-bottom: solid 1px #4040bf;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .container header h1 {
@@ -50,12 +45,8 @@
 
 .container header nav ul {
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  justify-content: space-evenly;
 }
 
 .container header nav ul a {
@@ -79,19 +70,15 @@
 
 .container .mainpage {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
 
 .container .mainpage main {
   width: 60%;
   background-color: var(--bg-color);
   border-radius: 1em;
-  -webkit-box-shadow: inset 0 0 5px #4040bf;
-          box-shadow: inset 0 0 5px #4040bf;
+  box-shadow: inset 0 0 5px #4040bf;
 }
 
 .container .mainpage main h2 {
@@ -100,14 +87,9 @@
 }
 
 .container .mainpage main .mainflex {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-around;
+  align-items: center;
   margin: 1em;
 }
 
@@ -147,18 +129,10 @@
   background-color: var(--bg-color);
   border-radius: 1em;
   padding: 3em;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-shadow: inset 0 0 5px #4040bf;
-          box-shadow: inset 0 0 5px #4040bf;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: inset 0 0 5px #4040bf;
 }
 
 .container .mainpage aside h2 {
@@ -169,15 +143,9 @@
   height: 100px;
   border: 1px solid var(--header-line);
   border-radius: 1em;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   color: var(--header-line);
   letter-spacing: .4em;
   font-weight: bold;

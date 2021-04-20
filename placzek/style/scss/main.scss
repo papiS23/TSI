@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(172, 62, 62);
+}
+.header{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    &__title{
+        font-size: 70px;
+        color: rgb(52, 183, 192);
+    }
+}
+.main{
+    &__input{
+        font-size: 40px;
+    }
+    &__submit{
+        font-size: 40px;
+        width: 2em;
+    }
+}
+.list{
+    margin-top: 5%;
+    width: 100%;
+    &__div{
+        display: flex;
+        background-color: #fff;
+        padding: 1em;
+    }
+    &__text{
+        flex: 1;
+        font-size: 30px;
+    }
+    &__btn{
+        width: 15%;
+        background-color: rgb(177, 2, 2);
+        &--complete{
+            background-color: rgb(5, 148, 5);
+        }
+    }
+}
