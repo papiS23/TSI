@@ -14,7 +14,6 @@ btn.addEventListener("click", () => {
   mainDiv.classList.add("container__div");
 
   mainDiv.appendChild(p);
-  img;
   mainDiv.appendChild(img);
   itemList.appendChild(mainDiv);
 
