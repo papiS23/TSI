@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Anton', sans-serif;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: #a5a58d;
+}
+.header{
+    width: 80%;
+    height: 10%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__link{
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: black;
+        font-size: 25px;
+        border-bottom: 7px solid #a5a58d;
+        margin-top: 5%;
+        &--contact{
+            &:hover{
+                border-bottom: 7px solid black;
+            }
+        }
+    }
+    &__logo{
+        width: 8vw;
+    }
+    &__title{
+        font-size: 50px;
+    }
+}
+.main{
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    display: flex;
+    &__big-box{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5%;
+    }
+    &__content-box{
+        width: 90%;
+        height: 30%;
+        display: flex;
+        text-decoration: none;
+        color: black;
+        align-items: center;
+        padding: .5em;
+        border-radius: 2em;
+        // border: #a5a58d 1px solid;
+        transition: all .5s ease;
+        &:hover{
+            // border: black 1px solid;
+            -webkit-box-shadow: 1px 2px 15px 6px rgba(0,0,0,0.8); 
+            box-shadow: 1px 2px 15px 6px rgba(0,0,0,0.8);
+        }
+    }
+    &__img{
+        width: 15vw;
+        margin-right: 1%;
+    }
+    &__paragraph{
+        font-size: 20px;
+    }
+
+}
