@@ -69,6 +69,7 @@
   padding: .5em;
   border-radius: 2em;
   transition: all .5s ease;
+  overflow: hidden;
 }
 
 .main__content-box:hover {
@@ -82,5 +83,31 @@
 
 .main__paragraph {
   font-size: 20px;
+}
+
+@media (max-width: 1400px) {
+  .main__paragraph {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .main {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main__big-box {
+    height: 25%;
+    justify-content: space-around;
+  }
+  .main__big-box--big {
+    height: 75%;
+  }
+  .main__content-box {
+    height: 50%;
+  }
+  .main__paragraph {
+    font-size: 10px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
