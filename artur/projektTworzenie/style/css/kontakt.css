@@ -34,7 +34,7 @@
 }
 
 .header__logo {
-  width: 8vw;
+  width: 120px;
 }
 
 .header__title {
@@ -71,5 +71,44 @@
   display: flex;
   align-items: center;
   font-size: 20px;
+}
+
+@media (max-width: 1400px) {
+  .main__titles {
+    font-size: 30px;
+  }
+  .main__paragraph {
+    font-size: 20px;
+  }
+  .main__img {
+    width: 40%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .header__logo {
+    width: 100px;
+  }
+  .header__title {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .header__logo {
+    width: 80px;
+  }
+  .header__title {
+    font-size: 30px;
+  }
+  .main__titles {
+    font-size: 30px;
+  }
+  .main__paragraph {
+    font-size: 20px;
+  }
+  .main__img {
+    display: none;
+  }
 }
 /*# sourceMappingURL=kontakt.css.map */
