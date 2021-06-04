@@ -11,13 +11,64 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #40f0d8;
 }
 
 .header {
   margin-top: 10vh;
 }
 
+.main {
+  width: 35%;
+}
+
 .main__form {
+  width: 100%;
   margin-bottom: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.main__input {
+  padding: 1em;
+}
+
+.main__select {
+  padding: 1em;
+}
+
+.main__submit {
+  background-color: #f59c48;
+  padding: .6em;
+}
+
+.main__item-div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5%;
+}
+
+.main__item-div--completed {
+  opacity: 0.2;
+}
+
+.main__item-p {
+  flex: 1;
+  color: white;
+  margin-left: 3%;
+}
+
+.main__button {
+  background-color: #f14242;
+  padding: 1em;
+}
+
+.main__button--completed {
+  background-color: #7ee74e;
+}
+
+.main__btn-img {
+  pointer-events: none;
 }
 /*# sourceMappingURL=main.css.map */

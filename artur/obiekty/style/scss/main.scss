@@ -10,12 +10,52 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: rgb(64, 240, 216);
 }
 .header{
     margin-top: 10vh;
 }
 .main{
+    width: 35%;
     &__form{
+        width: 100%;
         margin-bottom: 5vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    &__input{
+        padding: 1em;
+    }
+    &__select{
+        padding: 1em;
+    }
+    &__submit{
+        background-color: rgb(245, 156, 72);
+        padding: .6em;
+    }
+    &__item-div{
+        display: flex;
+        align-items: center;
+        // padding: 1em;
+        margin-bottom: 5%;
+        &--completed{
+            opacity: 0.2;
+        }
+    }
+    &__item-p{
+        flex: 1;
+        color: white;
+        margin-left: 3%;
+    }
+    &__button{
+        background-color: rgb(241, 66, 66);
+        padding: 1em;
+        &--completed{
+            background-color: rgb(126, 231, 78);
+        }
+    }
+    &__btn-img{
+        pointer-events: none;
     }
 }
