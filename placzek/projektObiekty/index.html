@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/css/main.css">
+    <meta name="Author" content="Mateusz Płaczek">
+    <title>Projekt Obiekty</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="header__title">Lista zakupów</h1>
+        </header>
+        <main class="main">
+            <form class="main__form">
+                <label class="main__label">Produkt:<input type="text" class="main__input main__input--text"></label>
+                <label class="main__label">Przeznaczony budzet:<input type="number" class="main__input main__input--number" min="0"></label>
+                <button type="submit" class="main__submit">+</button>
+            </form>
+            <ul class="main__list list">
+            </ul>
+        </main>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
