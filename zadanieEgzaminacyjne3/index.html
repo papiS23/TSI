@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styl3.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <label>Numer kształtu: <input type="number" id="choiceNumber" min="1"></label>
+    <label>R: <input type="number" min="0" max="256" id="colorR"></label>
+    <label>G: <input type="number" min="0" max="256" id="colorG"></label>
+    <label>B: <input type="number" min="0" max="256" id="colorB"></label>
+    <button id="submit">Zamów</button>
+    <p id="result">Wybrałeś kształt:</p>
+    <script>
+        const shapeNr = document.querySelector("#choiceNumber");
+        const colorR = document.querySelector("#colorR");
+        const colorG = document.querySelector("#colorG");
+        const colorB = document.querySelector("#colorB");
+        const resultP = document.querySelector("#result");
+        const submitBtn = document.querySelector("#submit");
+
+        submitBtn.addEventListener('click', zamow);
+
+        function zamow() {
+            switch (parseInt(shapeNr.value)) {
+                case 1:
+                    resultP.innerHTML = "Wybrałeś kształt: miś";
+                    break;
+                case 2:
+                    resultP.innerHTML = "Wybrałeś kształt: zabka";
+                    break;
+                case 3:
+                    resultP.innerHTML = "Wybrałeś kształt: serce";
+                    break;
+                default:
+                    resultP.innerHTML = "Wybrałeś kształt: inny";
+            }
+
+            const colors = [parseInt(colorR.value), parseInt(colorG.value), parseInt(colorB.value)];
+
+            submitBtn.style = `background-color: rgb(${colors[0]}, ${colors[1]}, ${colors[2]})`;
+        }
+    </script>
+</body>
+
+</html>
