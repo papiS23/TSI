@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="" method="post">
+        <label for="dni">Dni tygodnia:
+            <select name="dni" id="dni" multiple>
+                <option value="pn">Poniedziałek</option>
+                <option value="wt">Wtorek</option>
+                <option value="sr">Sroda</option>
+                <option value="czw">Czwartek</option>
+                <option value="pt">Piatek</option>
+                <option value="sb">Sobota</option>
+                <option value="nd">Niedziela</option>
+            </select>
+        </label>
+        <div class="radioboxy">
+            <label><input type="radio" name="check">Dni robocze</label>
+            <label><input type="radio" name="check">Weekendy</label>
+        </div>
+        <div class="checkboxy">
+            <label><input type="checkbox" name="check">Dni robocze</label>
+            <label><input type="checkbox" name="check">Weekendy</label>
+        </div>
+        <input type="submit" value="Wyslij" class="submit">
+
+    </form>
+    <script src="./app.js"></script>
+</body>
+
+</html>
