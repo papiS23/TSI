@@ -1,0 +1,62 @@
+body {
+    font-family: Verdana;
+}
+
+a {
+    color: brown;
+}
+
+.baner {
+    height: 60px;
+}
+
+.baner,
+.stopka,
+.prawy,
+.lewy {
+    background-color: #ffb31c;
+}
+
+.srodek {
+    background-color: #ffcb71;
+    width: 60%;
+    height: 480px;
+    overflow: scroll;
+    float: left;
+}
+
+.baner,
+.stopka {
+    text-align: center;
+}
+
+.prawy {
+    text-align: right;
+    float: right;
+}
+
+.prawy,
+.lewy {
+    width: 20%;
+    height: 480px;
+
+}
+
+.lewy {
+    float: left;
+}
+
+.prawy ul,
+.lewy ul {
+    list-style: square;
+
+}
+
+.stopka {
+    height: 30px;
+    clear: both;
+}
+
+td {
+    border: 1px solid black;
+}
