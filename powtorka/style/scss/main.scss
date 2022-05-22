@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #C1AAC0;
+}
+
+.header {
+    margin-top: 20vh;
+
+    &__title {
+        font-size: 3em;
+    }
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__input {
+        font-size: 25px;
+    }
+
+    &__submit {
+        // font-size: 1em;
+        width: 25px;
+        height: 25px;
+    }
+}
+
+.todo-list {
+    width: 40vh;
+    margin-top: 2em;
+    list-style-type: none;
+
+    &__item {
+        width: 100%;
+        height: 5vh;
+        display: flex;
+        align-items: center;
+        margin-bottom: 1em;
+        background-color: rgb(255, 255, 255);
+
+        &--completed {
+            text-decoration: line-through;
+            opacity: 50%;
+            transition-duration: .5s;
+        }
+    }
+
+    &__p {
+        width: 68%;
+        margin-left: 2%;
+    }
+
+    &__button {
+        width: 15%;
+        height: 100%;
+        border: none;
+
+        &--completed {
+            background-color: #2CF6B3;
+        }
+
+        &--delete {
+            background-color: #DE6C83;
+        }
+    }
+
+}
